@@ -16,14 +16,11 @@ class CustomButton: UIButton {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        setConfig()
     }
     
     func setConfig() {
-        backgroundColor = UIColor.green.withAlphaComponent(0.7)
-        setTitleColor(.white, for: .normal)
-        layer.borderColor = CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 1)
-        layer.borderWidth = 1
-        layer.cornerRadius = 5.0
+        layer.cornerRadius = 25
     }
     
     

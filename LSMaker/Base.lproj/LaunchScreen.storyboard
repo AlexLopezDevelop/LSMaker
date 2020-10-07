@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,12 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaSalle-logo" translatesAutoresizingMaskIntoConstraints="NO" id="6YT-65-ME0">
-                                <rect key="frame" x="159" y="401" width="97" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaSalle-logo" translatesAutoresizingMaskIntoConstraints="NO" id="6YT-65-ME0">
+                                <rect key="frame" x="122" y="408" width="170" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6YT-65-ME0" secondAttribute="height" multiplier="17:8" id="QVv-QH-XjZ"/>
+                                    <constraint firstAttribute="width" constant="170" id="rYX-7t-UQk"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.46863144639999998" green="0.67584174870000002" blue="0.88302439450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6YT-65-ME0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Suj-SC-RCG"/>
+                            <constraint firstItem="6YT-65-ME0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="liw-oA-0cb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaSalle-logo" width="57" height="57"/>
+        <image name="LaSalle-logo" width="235" height="80"/>
     </resources>
 </document>
