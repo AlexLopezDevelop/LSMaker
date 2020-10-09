@@ -16,13 +16,7 @@ class CustomButton: UIButton {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setConfig()
     }
-    
-    func setConfig() {
-        layer.cornerRadius = 25
-    }
-    
     
     // Button onClick animation
     func touchIn() {
