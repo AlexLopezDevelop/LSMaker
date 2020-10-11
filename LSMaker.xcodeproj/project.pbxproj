@@ -10,7 +10,7 @@
 		AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D39732510C3BC0009FAEF /* GradientView.swift */; };
 		AC85236824D98EE5003E7C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236724D98EE5003E7C1B /* AppDelegate.swift */; };
 		AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236924D98EE5003E7C1B /* SceneDelegate.swift */; };
-		AC85236C24D98EE5003E7C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236B24D98EE5003E7C1B /* ViewController.swift */; };
+		AC85236C24D98EE5003E7C1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236B24D98EE5003E7C1B /* MainViewController.swift */; };
 		AC85236F24D98EE5003E7C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC85236D24D98EE5003E7C1B /* Main.storyboard */; };
 		AC85237224D98EE5003E7C1B /* LSMaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC85237024D98EE5003E7C1B /* LSMaker.xcdatamodeld */; };
 		AC85237424D98EE8003E7C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC85237324D98EE8003E7C1B /* Assets.xcassets */; };
@@ -18,6 +18,9 @@
 		AC85238224D98EE8003E7C1B /* LSMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85238124D98EE8003E7C1B /* LSMakerTests.swift */; };
 		AC85238D24D98EE8003E7C1B /* LSMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85238C24D98EE8003E7C1B /* LSMakerUITests.swift */; };
 		AC92EDFD25110566008AB899 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92EDFC25110566008AB899 /* CustomButton.swift */; };
+		ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */; };
+		ACAE8BD92533338400D28E14 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */; };
+		ACAE8BF02533451400D28E14 /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,7 @@
 		AC85236424D98EE5003E7C1B /* LSMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC85236724D98EE5003E7C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC85236924D98EE5003E7C1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC85236B24D98EE5003E7C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC85236B24D98EE5003E7C1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC85236E24D98EE5003E7C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC85237124D98EE5003E7C1B /* LSMaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LSMaker.xcdatamodel; sourceTree = "<group>"; };
 		AC85237324D98EE8003E7C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		AC85238C24D98EE8003E7C1B /* LSMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMakerUITests.swift; sourceTree = "<group>"; };
 		AC85238E24D98EE8003E7C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC92EDFC25110566008AB899 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectDeviceViewController.swift; sourceTree = "<group>"; };
+		ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAE8BD92533338400D28E14 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +105,7 @@
 				AC85238024D98EE8003E7C1B /* LSMakerTests */,
 				AC85238B24D98EE8003E7C1B /* LSMakerUITests */,
 				AC85236524D98EE5003E7C1B /* Products */,
+				ACAE8BD72533338300D28E14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +122,10 @@
 		AC85236624D98EE5003E7C1B /* LSMaker */ = {
 			isa = PBXGroup;
 			children = (
+				ACAE8BCC2533270800D28E14 /* ViewControllers */,
 				AC3D39752510C6240009FAEF /* CustomAssets */,
 				AC85236724D98EE5003E7C1B /* AppDelegate.swift */,
 				AC85236924D98EE5003E7C1B /* SceneDelegate.swift */,
-				AC85236B24D98EE5003E7C1B /* ViewController.swift */,
 				AC85236D24D98EE5003E7C1B /* Main.storyboard */,
 				AC85237324D98EE8003E7C1B /* Assets.xcassets */,
 				AC85237524D98EE8003E7C1B /* LaunchScreen.storyboard */,
@@ -143,6 +151,24 @@
 				AC85238E24D98EE8003E7C1B /* Info.plist */,
 			);
 			path = LSMakerUITests;
+			sourceTree = "<group>";
+		};
+		ACAE8BCC2533270800D28E14 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */,
+				AC85236B24D98EE5003E7C1B /* MainViewController.swift */,
+				ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ACAE8BD72533338300D28E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC85236C24D98EE5003E7C1B /* ViewController.swift in Sources */,
+				AC85236C24D98EE5003E7C1B /* MainViewController.swift in Sources */,
 				AC85236824D98EE5003E7C1B /* AppDelegate.swift in Sources */,
 				AC92EDFD25110566008AB899 /* CustomButton.swift in Sources */,
 				AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */,
 				AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */,
 				AC85237224D98EE5003E7C1B /* LSMaker.xcdatamodeld in Sources */,
+				ACAE8BF02533451400D28E14 /* ScanTableViewController.swift in Sources */,
+				ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = LSMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = LSMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

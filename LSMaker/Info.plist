@@ -60,5 +60,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Usamos Bluetooth para conectarnos al dispositivo de hardware LSMaker</string>
 </dict>
 </plist>
