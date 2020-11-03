@@ -39,17 +39,29 @@ class ConnectDeviceViewController: UIViewController, UITableViewDelegate, UITabl
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "scanTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scanTableCell", for: indexPath) as! TableViewCellDevice
         let peripheral = peripherals[indexPath.row]
-        cell.textLabel?.text = peripheral.name
+        cell.deviceName.text = peripheral.name
+        cell.serialNumber.text = peripheral.identifier.uuidString
+        //cell.rssiNumber.text = peripheral.ew
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let peripheral = peripherals[indexPath.row]
         
-        manager?.connect(peripheral, options: nil)
+        let deviceName = peripheral.name!
+        
+        // alert
+        let alert = UIAlertController(title: "Conectar dispositivo", message: "¿Quieres conectarte al dispositivo \(deviceName)?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Si", style: .default, handler: {(alert: UIAlertAction!) in
+            self.manager?.connect(peripheral, options: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+        
     }
     
     // MARK: BLE Scanning
@@ -72,7 +84,9 @@ class ConnectDeviceViewController: UIViewController, UITableViewDelegate, UITabl
     // MARK: - CBCentralManagerDelegate Methods
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         if(!peripherals.contains(peripheral)) {
-            peripherals.append(peripheral)
+            if peripheral.name != nil {
+                peripherals.append(peripheral)
+            }
         }
         
         self.devicesTableView.reloadData()
@@ -106,7 +120,7 @@ class ConnectDeviceViewController: UIViewController, UITableViewDelegate, UITabl
             navController.popViewController(animated: true)
         }
         
-        print("Connected to " +  peripheral.name!)
+        connectionSucessMessage(deviceName: peripheral.name!)
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
@@ -122,10 +136,18 @@ class ConnectDeviceViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     @IBAction func deviceScannerButton(_ sender: Any) {
-        
+        scanBLEDevices()
     }
     
     @IBAction func recentDevicesButton(_ sender: Any) {
         
+    }
+    
+    func connectionSucessMessage (deviceName: String){
+        let alert = UIAlertController(title: "Conectado correctamente", message: "Se ha conectado correctamente a \(deviceName)", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Vale", style: .default, handler: nil))
+
+        self.present(alert, animated: true)
     }
 }

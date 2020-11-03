@@ -1,0 +1,6 @@
+framework module Pods_LSMaker_LSMakerUITests {
+  umbrella header "Pods-LSMaker-LSMakerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

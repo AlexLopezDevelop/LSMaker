@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		694C76525E2C42DACD8CF7AC /* Pods_LSMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980B117DF8972BF49F0239B /* Pods_LSMaker.framework */; };
+		9C418881CBC57BFEA33F474E /* Pods_LSMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57BC807E0894385A69420CB /* Pods_LSMakerTests.framework */; };
 		AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D39732510C3BC0009FAEF /* GradientView.swift */; };
 		AC85236824D98EE5003E7C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236724D98EE5003E7C1B /* AppDelegate.swift */; };
 		AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236924D98EE5003E7C1B /* SceneDelegate.swift */; };
@@ -18,9 +20,11 @@
 		AC85238224D98EE8003E7C1B /* LSMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85238124D98EE8003E7C1B /* LSMakerTests.swift */; };
 		AC85238D24D98EE8003E7C1B /* LSMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85238C24D98EE8003E7C1B /* LSMakerUITests.swift */; };
 		AC92EDFD25110566008AB899 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92EDFC25110566008AB899 /* CustomButton.swift */; };
+		ACA952512551A77400DE65B7 /* JoystickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA952502551A77400DE65B7 /* JoystickViewController.swift */; };
 		ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */; };
 		ACAE8BD92533338400D28E14 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */; };
-		ACAE8BF02533451400D28E14 /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */; };
+		ACB2C21B2549A24100C1026B /* TableViewCellDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */; };
+		E147A6D4DA438DC0A35104B5 /* Pods_LSMaker_LSMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2292E1A7FA35E9D537844CC /* Pods_LSMaker_LSMakerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CAEB2D7B12BB31BF5259DB1 /* Pods-LSMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker.debug.xcconfig"; path = "Target Support Files/Pods-LSMaker/Pods-LSMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		2980B117DF8972BF49F0239B /* Pods_LSMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6115F93C77F8F9806E33A3AB /* Pods-LSMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-LSMakerTests/Pods-LSMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A964FB9E218E764FAFBA1809 /* Pods-LSMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker.release.xcconfig"; path = "Target Support Files/Pods-LSMaker/Pods-LSMaker.release.xcconfig"; sourceTree = "<group>"; };
 		AC3D39732510C3BC0009FAEF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AC85236424D98EE5003E7C1B /* LSMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC85236724D98EE5003E7C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +66,15 @@
 		AC85238C24D98EE8003E7C1B /* LSMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMakerUITests.swift; sourceTree = "<group>"; };
 		AC85238E24D98EE8003E7C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC92EDFC25110566008AB899 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		ACA952502551A77400DE65B7 /* JoystickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickViewController.swift; sourceTree = "<group>"; };
 		ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectDeviceViewController.swift; sourceTree = "<group>"; };
 		ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
+		ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellDevice.swift; sourceTree = "<group>"; };
+		ACD86ECFA3BF47A4487756B7 /* Pods-LSMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMakerTests.release.xcconfig"; path = "Target Support Files/Pods-LSMakerTests/Pods-LSMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB962D01F754CD5EA762D9DE /* Pods-LSMaker-LSMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker-LSMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2292E1A7FA35E9D537844CC /* Pods_LSMaker_LSMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMaker_LSMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3288BE44C9B491707017654 /* Pods-LSMaker-LSMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker-LSMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F57BC807E0894385A69420CB /* Pods_LSMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAE8BD92533338400D28E14 /* CoreBluetooth.framework in Frameworks */,
+				694C76525E2C42DACD8CF7AC /* Pods_LSMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C418881CBC57BFEA33F474E /* Pods_LSMakerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E147A6D4DA438DC0A35104B5 /* Pods_LSMaker_LSMakerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +123,7 @@
 				AC85238B24D98EE8003E7C1B /* LSMakerUITests */,
 				AC85236524D98EE5003E7C1B /* Products */,
 				ACAE8BD72533338300D28E14 /* Frameworks */,
+				F66ABBEF68D2B1FAD4A7A060 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,9 +174,10 @@
 		ACAE8BCC2533270800D28E14 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ACAE8BEF2533451400D28E14 /* ScanTableViewController.swift */,
+				ACB2C2162549A1F500C1026B /* CustomCells */,
 				AC85236B24D98EE5003E7C1B /* MainViewController.swift */,
 				ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */,
+				ACA952502551A77400DE65B7 /* JoystickViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -167,8 +186,32 @@
 			isa = PBXGroup;
 			children = (
 				ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */,
+				2980B117DF8972BF49F0239B /* Pods_LSMaker.framework */,
+				F2292E1A7FA35E9D537844CC /* Pods_LSMaker_LSMakerUITests.framework */,
+				F57BC807E0894385A69420CB /* Pods_LSMakerTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACB2C2162549A1F500C1026B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		F66ABBEF68D2B1FAD4A7A060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CAEB2D7B12BB31BF5259DB1 /* Pods-LSMaker.debug.xcconfig */,
+				A964FB9E218E764FAFBA1809 /* Pods-LSMaker.release.xcconfig */,
+				BB962D01F754CD5EA762D9DE /* Pods-LSMaker-LSMakerUITests.debug.xcconfig */,
+				F3288BE44C9B491707017654 /* Pods-LSMaker-LSMakerUITests.release.xcconfig */,
+				6115F93C77F8F9806E33A3AB /* Pods-LSMakerTests.debug.xcconfig */,
+				ACD86ECFA3BF47A4487756B7 /* Pods-LSMakerTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC85239124D98EE8003E7C1B /* Build configuration list for PBXNativeTarget "LSMaker" */;
 			buildPhases = (
+				CD2544A7AA94970CCAE38515 /* [CP] Check Pods Manifest.lock */,
 				AC85236024D98EE5003E7C1B /* Sources */,
 				AC85236124D98EE5003E7C1B /* Frameworks */,
 				AC85236224D98EE5003E7C1B /* Resources */,
+				4F19B0B09EB6C6C7A94CE671 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC85239424D98EE8003E7C1B /* Build configuration list for PBXNativeTarget "LSMakerTests" */;
 			buildPhases = (
+				912A397B4BDEB702BC75505E /* [CP] Check Pods Manifest.lock */,
 				AC85237924D98EE8003E7C1B /* Sources */,
 				AC85237A24D98EE8003E7C1B /* Frameworks */,
 				AC85237B24D98EE8003E7C1B /* Resources */,
@@ -213,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC85239724D98EE8003E7C1B /* Build configuration list for PBXNativeTarget "LSMakerUITests" */;
 			buildPhases = (
+				BF47BA7113C616FD4347A6C7 /* [CP] Check Pods Manifest.lock */,
 				AC85238424D98EE8003E7C1B /* Sources */,
 				AC85238524D98EE8003E7C1B /* Frameworks */,
 				AC85238624D98EE8003E7C1B /* Resources */,
+				84C0051F906316F19608ABC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Alex Lopez";
 				TargetAttributes = {
 					AC85236324D98EE5003E7C1B = {
@@ -297,6 +345,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F19B0B09EB6C6C7A94CE671 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMaker/Pods-LSMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMaker/Pods-LSMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSMaker/Pods-LSMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84C0051F906316F19608ABC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912A397B4BDEB702BC75505E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF47BA7113C616FD4347A6C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSMaker-LSMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2544A7AA94970CCAE38515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC85236024D98EE5003E7C1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -308,8 +459,9 @@
 				AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */,
 				AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */,
 				AC85237224D98EE5003E7C1B /* LSMaker.xcdatamodeld in Sources */,
-				ACAE8BF02533451400D28E14 /* ScanTableViewController.swift in Sources */,
 				ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */,
+				ACA952512551A77400DE65B7 /* JoystickViewController.swift in Sources */,
+				ACB2C21B2549A24100C1026B /* TableViewCellDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +542,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -450,6 +603,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -480,6 +634,7 @@
 		};
 		AC85239224D98EE8003E7C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CAEB2D7B12BB31BF5259DB1 /* Pods-LSMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +653,7 @@
 		};
 		AC85239324D98EE8003E7C1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A964FB9E218E764FAFBA1809 /* Pods-LSMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +672,7 @@
 		};
 		AC85239524D98EE8003E7C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6115F93C77F8F9806E33A3AB /* Pods-LSMakerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -537,6 +694,7 @@
 		};
 		AC85239624D98EE8003E7C1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACD86ECFA3BF47A4487756B7 /* Pods-LSMakerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -558,6 +716,7 @@
 		};
 		AC85239824D98EE8003E7C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB962D01F754CD5EA762D9DE /* Pods-LSMaker-LSMakerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +736,7 @@
 		};
 		AC85239924D98EE8003E7C1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3288BE44C9B491707017654 /* Pods-LSMaker-LSMakerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
