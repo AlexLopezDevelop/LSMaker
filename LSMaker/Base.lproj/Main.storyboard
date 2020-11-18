@@ -157,7 +157,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLg-H7-0uh" customClass="CDJoystick" customModule="CDJoystick">
                                 <rect key="frame" x="157" y="662" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Tck-hh-GcK"/>
                                     <constraint firstAttribute="height" constant="100" id="lRQ-zn-fwh"/>
@@ -181,40 +181,40 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-BM-juZ">
-                                <rect key="frame" x="62" y="441.5" width="290" height="120.5"/>
+                                <rect key="frame" x="36" y="441.5" width="342" height="120.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-HF-Z6F">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-XA-UDI">
-                                        <rect key="frame" x="0.0" y="40.5" width="290" height="30"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="342" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-aZ-yx5">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
                                                 <state key="normal" title="Bus"/>
                                                 <connections>
                                                     <action selector="buttonSpeed1:" destination="ERt-rj-GF4" eventType="touchUpInside" id="nOy-XF-YfK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxF-O1-4nT">
-                                                <rect key="frame" x="109" y="0.0" width="39" height="30"/>
+                                                <rect key="frame" x="161" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="Lento"/>
                                                 <connections>
                                                     <action selector="buttonSpeed2:" destination="ERt-rj-GF4" eventType="touchUpInside" id="7qw-3k-qBF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Wc-06h">
-                                                <rect key="frame" x="170" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="222" y="0.0" width="50" height="30"/>
                                                 <state key="normal" title="Normal"/>
                                                 <connections>
                                                     <action selector="buttonSpeed3:" destination="ERt-rj-GF4" eventType="touchUpInside" id="PqB-id-fH0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-Vu-KVn">
-                                                <rect key="frame" x="242" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="294" y="0.0" width="48" height="30"/>
                                                 <state key="normal" title="Rapido"/>
                                                 <connections>
                                                     <action selector="buttonSpeed4:" destination="ERt-rj-GF4" eventType="touchUpInside" id="0C6-a8-dlW"/>
@@ -223,17 +223,30 @@
                                         </subviews>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-G3-blI">
-                                        <rect key="frame" x="-2" y="90.5" width="294" height="31"/>
+                                        <rect key="frame" x="-2" y="90.5" width="346" height="31"/>
                                     </slider>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-zO-Og4">
+                                <rect key="frame" x="364" y="44" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AJs-Kz-3kR"/>
+                                    <constraint firstAttribute="width" constant="30" id="eAf-rU-e7s"/>
+                                </constraints>
+                                <state key="normal" image="close-icon"/>
+                                <connections>
+                                    <action selector="buttonClose:" destination="ERt-rj-GF4" eventType="touchUpInside" id="kng-nm-8QY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gAx-8S-Ndb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rLg-H7-0uh" firstAttribute="top" secondItem="5PG-BM-juZ" secondAttribute="bottom" constant="100" id="bjX-kk-I4m"/>
                             <constraint firstItem="5PG-BM-juZ" firstAttribute="centerX" secondItem="eMy-hf-sQY" secondAttribute="centerX" id="dEn-WA-6hK"/>
+                            <constraint firstItem="czF-zO-Og4" firstAttribute="top" secondItem="gAx-8S-Ndb" secondAttribute="top" id="geD-5g-MCf"/>
                             <constraint firstItem="rLg-H7-0uh" firstAttribute="centerX" secondItem="eMy-hf-sQY" secondAttribute="centerX" id="mQB-LV-Abp"/>
+                            <constraint firstItem="gAx-8S-Ndb" firstAttribute="trailing" secondItem="czF-zO-Og4" secondAttribute="trailing" constant="20" id="mXa-BV-8ke"/>
                             <constraint firstItem="gAx-8S-Ndb" firstAttribute="bottom" secondItem="rLg-H7-0uh" secondAttribute="bottom" constant="100" id="sti-f8-otU"/>
                         </constraints>
                     </view>
@@ -340,19 +353,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-fl-PVL">
                                                             <rect key="frame" x="10" y="10" width="102" height="58.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnd-ch-Okc">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Device name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnd-ch-Okc">
                                                                     <rect key="frame" x="0.0" y="0.0" width="102" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-Dv-scM">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Serial number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-Dv-scM">
                                                                     <rect key="frame" x="0.0" y="21.5" width="95" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rssi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me1-sM-hNQ">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rssi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me1-sM-hNQ">
                                                                     <rect key="frame" x="0.0" y="40.5" width="28" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
@@ -560,6 +573,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close-icon" width="512" height="512"/>
         <image name="lsmaker" width="790" height="493"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -59,6 +59,11 @@ class JoystickViewController: UIViewController {
         view.addSubview(joystick)
     }
 
+    
+    @IBAction func buttonClose(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // Buttons Speed
     @IBAction func buttonSpeed1(_ sender: Any) {
         sliderSpeed.value = 25
