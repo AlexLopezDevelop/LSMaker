@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -181,37 +181,49 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-BM-juZ">
-                                <rect key="frame" x="68" y="441.5" width="278" height="120.5"/>
+                                <rect key="frame" x="62" y="441.5" width="290" height="120.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-HF-Z6F">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-XA-UDI">
-                                        <rect key="frame" x="0.0" y="40.5" width="278" height="30"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="290" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-aZ-yx5">
-                                                <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87" height="30"/>
                                                 <state key="normal" title="Bus"/>
+                                                <connections>
+                                                    <action selector="buttonSpeed1:" destination="ERt-rj-GF4" eventType="touchUpInside" id="nOy-XF-YfK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxF-O1-4nT">
-                                                <rect key="frame" x="97" y="0.0" width="39" height="30"/>
+                                                <rect key="frame" x="109" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="Lento"/>
+                                                <connections>
+                                                    <action selector="buttonSpeed2:" destination="ERt-rj-GF4" eventType="touchUpInside" id="7qw-3k-qBF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Wc-06h">
-                                                <rect key="frame" x="158" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="170" y="0.0" width="50" height="30"/>
                                                 <state key="normal" title="Normal"/>
+                                                <connections>
+                                                    <action selector="buttonSpeed3:" destination="ERt-rj-GF4" eventType="touchUpInside" id="PqB-id-fH0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-Vu-KVn">
-                                                <rect key="frame" x="230" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="242" y="0.0" width="48" height="30"/>
                                                 <state key="normal" title="Rapido"/>
+                                                <connections>
+                                                    <action selector="buttonSpeed4:" destination="ERt-rj-GF4" eventType="touchUpInside" id="0C6-a8-dlW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-G3-blI">
-                                        <rect key="frame" x="-2" y="90.5" width="282" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-G3-blI">
+                                        <rect key="frame" x="-2" y="90.5" width="294" height="31"/>
                                     </slider>
                                 </subviews>
                             </stackView>

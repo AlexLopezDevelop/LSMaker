@@ -59,4 +59,20 @@ class JoystickViewController: UIViewController {
         view.addSubview(joystick)
     }
 
+    // Buttons Speed
+    @IBAction func buttonSpeed1(_ sender: Any) {
+        sliderSpeed.value = 25
+    }
+    
+    @IBAction func buttonSpeed2(_ sender: Any) {
+        sliderSpeed.value = 50
+    }
+    
+    @IBAction func buttonSpeed3(_ sender: Any) {
+        sliderSpeed.value = 75
+    }
+    
+    @IBAction func buttonSpeed4(_ sender: Any) {
+        sliderSpeed.value = 100
+    }
 }
