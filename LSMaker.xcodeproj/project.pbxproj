@@ -24,6 +24,10 @@
 		ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */; };
 		ACAE8BD92533338400D28E14 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */; };
 		ACB2C21B2549A24100C1026B /* TableViewCellDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */; };
+		B2ADF0BB5357105D305B9A82 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADF33FA05E3DA48FA67ED2 /* Bluetooth.swift */; };
+		B2ADF4E5E448332865C38B14 /* Joystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADF04CF50365B95B5D85C4 /* Joystick.swift */; };
+		B2ADF533E49DD80FA17F5367 /* LSMakerJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADF4F3EDA4F83152F44A9F /* LSMakerJoystick.swift */; };
+		B2ADFD769D697D844EDCCD27 /* DrivingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADFA1CC15BE245E5167DAA /* DrivingDataManager.swift */; };
 		E147A6D4DA438DC0A35104B5 /* Pods_LSMaker_LSMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2292E1A7FA35E9D537844CC /* Pods_LSMaker_LSMakerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,10 @@
 		ACAE8BD82533338400D28E14 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellDevice.swift; sourceTree = "<group>"; };
 		ACD86ECFA3BF47A4487756B7 /* Pods-LSMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMakerTests.release.xcconfig"; path = "Target Support Files/Pods-LSMakerTests/Pods-LSMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2ADF04CF50365B95B5D85C4 /* Joystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joystick.swift; sourceTree = "<group>"; };
+		B2ADF33FA05E3DA48FA67ED2 /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		B2ADF4F3EDA4F83152F44A9F /* LSMakerJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMakerJoystick.swift; sourceTree = "<group>"; };
+		B2ADFA1CC15BE245E5167DAA /* DrivingDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrivingDataManager.swift; sourceTree = "<group>"; };
 		BB962D01F754CD5EA762D9DE /* Pods-LSMaker-LSMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker-LSMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2292E1A7FA35E9D537844CC /* Pods_LSMaker_LSMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMaker_LSMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3288BE44C9B491707017654 /* Pods-LSMaker-LSMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker-LSMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-LSMaker-LSMakerUITests/Pods-LSMaker-LSMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +157,9 @@
 				AC85237524D98EE8003E7C1B /* LaunchScreen.storyboard */,
 				AC85237824D98EE8003E7C1B /* Info.plist */,
 				AC85237024D98EE5003E7C1B /* LSMaker.xcdatamodeld */,
+				B2ADFF66D9F7461656A48D2B /* Services */,
+				B2ADF50C6678DDA44D01E242 /* Utils */,
+				B2ADFBBAF4AB8A79ED2538B5 /* Models */,
 			);
 			path = LSMaker;
 			sourceTree = "<group>";
@@ -199,6 +210,31 @@
 				ACB2C21A2549A24100C1026B /* TableViewCellDevice.swift */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B2ADF50C6678DDA44D01E242 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADF04CF50365B95B5D85C4 /* Joystick.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B2ADFBBAF4AB8A79ED2538B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADF4F3EDA4F83152F44A9F /* LSMakerJoystick.swift */,
+				B2ADFA1CC15BE245E5167DAA /* DrivingDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2ADFF66D9F7461656A48D2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADF33FA05E3DA48FA67ED2 /* Bluetooth.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F66ABBEF68D2B1FAD4A7A060 /* Pods */ = {
@@ -462,6 +498,10 @@
 				ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */,
 				ACA952512551A77400DE65B7 /* JoystickViewController.swift in Sources */,
 				ACB2C21B2549A24100C1026B /* TableViewCellDevice.swift in Sources */,
+				B2ADF0BB5357105D305B9A82 /* Bluetooth.swift in Sources */,
+				B2ADF4E5E448332865C38B14 /* Joystick.swift in Sources */,
+				B2ADF533E49DD80FA17F5367 /* LSMakerJoystick.swift in Sources */,
+				B2ADFD769D697D844EDCCD27 /* DrivingDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
