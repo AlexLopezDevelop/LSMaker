@@ -10,8 +10,8 @@ class DrivingDataManager {
     var turn: UInt8
 
     init() {
-        speed = 0x10
-        turn = 0x10
+        speed = 0x20
+        turn = 0x00
     }
 
     func setSpeed(velocity: Int) {
@@ -38,13 +38,10 @@ class DrivingDataManager {
             turn =  0x10
         case "left":
             turn = 0x59
-            speed = 0x20
         case "right":
             turn = 0x99
-            speed = 0x20
         default:
             turn = 0x00
-            speed = 0x00
         }
     }
 }

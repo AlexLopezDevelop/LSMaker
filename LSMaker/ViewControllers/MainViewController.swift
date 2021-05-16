@@ -89,7 +89,9 @@ extension MainViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
 
                 queue.async { [self] in
                     while true {
+                        print("speed: " + String(drivingDataManager.turn))
                         lsmakerBluetooth.move(speed: drivingDataManager.speed, acceleration: lsMakerAcceleration, turn: drivingDataManager.turn)
+                        usleep(2000)
                     }
                 }
             }
