@@ -8,10 +8,12 @@ import Foundation
 class DrivingDataManager {
     var speed: UInt8
     var turn: UInt8
+    var acceleration: UInt8
 
     init() {
         speed = 0x20
         turn = 0x00
+        acceleration = 0x00
     }
 
     func setSpeed(velocity: Int) {

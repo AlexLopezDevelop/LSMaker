@@ -66,6 +66,7 @@ class JoystickViewController: UIViewController {
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
+        print("current speed: \(sliderSpeed.value)")
         drivingDataManager.setSpeed(velocity: Int(sliderSpeed.value))
     }
     
@@ -76,17 +77,21 @@ class JoystickViewController: UIViewController {
     // Buttons Speed
     @IBAction func buttonSpeed1(_ sender: Any) {
         sliderSpeed.value = 25
+        sliderValueChanged(sliderSpeed)
     }
 
     @IBAction func buttonSpeed2(_ sender: Any) {
         sliderSpeed.value = 50
+        sliderValueChanged(sliderSpeed)
     }
 
     @IBAction func buttonSpeed3(_ sender: Any) {
         sliderSpeed.value = 75
+        sliderValueChanged(sliderSpeed)
     }
 
     @IBAction func buttonSpeed4(_ sender: Any) {
         sliderSpeed.value = 100
+        sliderValueChanged(sliderSpeed)
     }
 }

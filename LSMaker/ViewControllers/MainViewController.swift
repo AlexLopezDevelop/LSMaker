@@ -20,9 +20,6 @@ class MainViewController: UIViewController {
     let rxServiceUUID = UUID(uuidString: "6e400001-b5a3-f393-e0a9-e50e24dcca9e")
     let rxCharUUID = UUID(uuidString: "6e400002-b5a3-f393-e0a9-e50e24dcca9e")
     let txCharUUID = UUID(uuidString: "6e400001-b5a3-f393-e0a9-e50e24dcca9e")
-    let BLEService = "DFB0"
-    let BLECharacteristic = "DFB1"
-    let BLETransmitOk = "0x04"
 
     @IBOutlet weak var deviceStatusLabel: UILabel!
     @IBOutlet weak var deviceNameLabel: UILabel!
@@ -90,7 +87,10 @@ extension MainViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
                 queue.async { [self] in
                     while true {
                         print("speed: " + String(drivingDataManager.turn))
-                        lsmakerBluetooth.move(speed: drivingDataManager.speed, acceleration: lsMakerAcceleration, turn: drivingDataManager.turn)
+                        lsmakerBluetooth.move(
+                                speed: drivingDataManager.speed,
+                                acceleration: drivingDataManager.acceleration,
+                                turn: drivingDataManager.turn)
                         usleep(2000)
                     }
                 }
