@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		694C76525E2C42DACD8CF7AC /* Pods_LSMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980B117DF8972BF49F0239B /* Pods_LSMaker.framework */; };
 		9C418881CBC57BFEA33F474E /* Pods_LSMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57BC807E0894385A69420CB /* Pods_LSMakerTests.framework */; };
+		AC0799C3265B05C200F53874 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0799C2265B05C200F53874 /* SettingsTableViewController.swift */; };
 		AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D39732510C3BC0009FAEF /* GradientView.swift */; };
 		AC85236824D98EE5003E7C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236724D98EE5003E7C1B /* AppDelegate.swift */; };
 		AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85236924D98EE5003E7C1B /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		2980B117DF8972BF49F0239B /* Pods_LSMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6115F93C77F8F9806E33A3AB /* Pods-LSMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-LSMakerTests/Pods-LSMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A964FB9E218E764FAFBA1809 /* Pods-LSMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSMaker.release.xcconfig"; path = "Target Support Files/Pods-LSMaker/Pods-LSMaker.release.xcconfig"; sourceTree = "<group>"; };
+		AC0799C2265B05C200F53874 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		AC3D39732510C3BC0009FAEF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		AC85236424D98EE5003E7C1B /* LSMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC85236724D98EE5003E7C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				AC85236B24D98EE5003E7C1B /* MainViewController.swift */,
 				ACAE8BD02533288100D28E14 /* ConnectDeviceViewController.swift */,
 				ACA952502551A77400DE65B7 /* JoystickViewController.swift */,
+				AC0799C2265B05C200F53874 /* SettingsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				AC3D39742510C3BC0009FAEF /* GradientView.swift in Sources */,
 				AC85236A24D98EE5003E7C1B /* SceneDelegate.swift in Sources */,
 				AC85237224D98EE5003E7C1B /* LSMaker.xcdatamodeld in Sources */,
+				AC0799C3265B05C200F53874 /* SettingsTableViewController.swift in Sources */,
 				ACAE8BD12533288200D28E14 /* ConnectDeviceViewController.swift in Sources */,
 				ACA952512551A77400DE65B7 /* JoystickViewController.swift in Sources */,
 				ACB2C21B2549A24100C1026B /* TableViewCellDevice.swift in Sources */,

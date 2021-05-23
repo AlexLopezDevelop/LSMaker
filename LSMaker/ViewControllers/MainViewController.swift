@@ -27,6 +27,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         manager = CBCentralManager(delegate: self, queue: nil)
+        deviceNameLabel.text = drivingDataManager.name
+        //deviceStatusLabel.text = drivingDataManager.status
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,12 +82,18 @@ extension MainViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
 
                 lsmakerBluetooth.initialize(peripheral: peripheral, characteristic: characteristic)
 
-                let lsMakerAcceleration: UInt8 = 0x15
+                drivingDataManager.name = peripheral.name ?? "none"
+                drivingDataManager.status = true
+                deviceNameLabel.text = drivingDataManager.name
+                if drivingDataManager.status {
+                    deviceStatusLabel.text = "Conectado"
+                    deviceStatusLabel.textColor = UIColor.green
+                }
 
                 let queue = DispatchQueue(label: "lsmaker.control.thread")
 
                 queue.async { [self] in
-                    while true {
+                    while drivingDataManager.status {
                         print("speed: " + String(drivingDataManager.turn))
                         lsmakerBluetooth.move(
                                 speed: drivingDataManager.speed,

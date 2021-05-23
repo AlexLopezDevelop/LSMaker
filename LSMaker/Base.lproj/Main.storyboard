@@ -181,39 +181,39 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-BM-juZ">
-                                <rect key="frame" x="-12" y="441.5" width="438" height="120.5"/>
+                                <rect key="frame" x="-18" y="441.5" width="450" height="120.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-HF-Z6F">
-                                        <rect key="frame" x="0.0" y="0.0" width="438" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-XA-UDI">
-                                        <rect key="frame" x="0.0" y="40.5" width="438" height="30"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="450" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-aZ-yx5">
-                                                <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="30"/>
                                                 <state key="normal" title="Bus"/>
                                                 <connections>
                                                     <action selector="buttonSpeed1:" destination="ERt-rj-GF4" eventType="touchUpInside" id="nOy-XF-YfK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxF-O1-4nT">
-                                                <rect key="frame" x="257" y="0.0" width="39" height="30"/>
+                                                <rect key="frame" x="269" y="0.0" width="39" height="30"/>
                                                 <state key="normal" title="Lento"/>
                                                 <connections>
                                                     <action selector="buttonSpeed2:" destination="ERt-rj-GF4" eventType="touchUpInside" id="7qw-3k-qBF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Wc-06h">
-                                                <rect key="frame" x="318" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="330" y="0.0" width="50" height="30"/>
                                                 <state key="normal" title="Normal"/>
                                                 <connections>
                                                     <action selector="buttonSpeed3:" destination="ERt-rj-GF4" eventType="touchUpInside" id="PqB-id-fH0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-Vu-KVn">
-                                                <rect key="frame" x="390" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="402" y="0.0" width="48" height="30"/>
                                                 <state key="normal" title="Rapido"/>
                                                 <connections>
                                                     <action selector="buttonSpeed4:" destination="ERt-rj-GF4" eventType="touchUpInside" id="0C6-a8-dlW"/>
@@ -222,7 +222,7 @@
                                         </subviews>
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BMI-G3-blI">
-                                        <rect key="frame" x="-2" y="90.5" width="442" height="31"/>
+                                        <rect key="frame" x="-2" y="90.5" width="454" height="31"/>
                                         <connections>
                                             <action selector="sliderValueChanged:" destination="ERt-rj-GF4" eventType="valueChanged" id="lLm-wc-XPQ"/>
                                         </connections>
@@ -427,10 +427,10 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="138.61607142857142"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings Table View Controller-->
         <scene sceneID="AIf-gS-7f4">
             <objects>
-                <tableViewController id="1H3-a7-xtn" sceneMemberID="viewController">
+                <tableViewController id="1H3-a7-xtn" customClass="SettingsTableViewController" customModule="LSMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NrS-JG-ZZd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -545,6 +545,9 @@
                                                     <state key="normal" title="Desconectar">
                                                         <color key="titleColor" systemColor="systemRedColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="disconectDeviceButton:" destination="1H3-a7-xtn" eventType="touchUpInside" id="OBi-e9-RsN"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -562,6 +565,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="j6m-6z-ZYu"/>
+                    <connections>
+                        <outlet property="deviceNameLabel" destination="Edm-0B-DGf" id="KmI-bX-qIO"/>
+                        <outlet property="deviceStatusLabel" destination="MpJ-TH-csV" id="Dn0-eC-3zX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lce-ns-TVs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,11 +9,15 @@ class DrivingDataManager {
     var speed: UInt8
     var turn: UInt8
     var acceleration: UInt8
+    var name: String
+    var status: Bool
 
     init() {
-        speed = 0x20
+        speed = 0x00
         turn = 0x00
         acceleration = 0x00
+        name = "Ningún dispositivo"
+        status = false
     }
 
     func setSpeed(velocity: Int) {
@@ -37,7 +41,7 @@ class DrivingDataManager {
         print("Direction: " + direction)
         switch direction {
         case "straight":
-            turn =  0x10
+            turn =  0x00
         case "left":
             turn = 0x59
         case "right":
