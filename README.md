@@ -10,11 +10,9 @@ Esta documentación se ha realizado con el fin de poder tener una base desde la 
 
 Para poder conectarse al LSMaker via bluetooth se necesita usar una librería que gestione dicha comunicación, en el caso de iOS se usa CoreBluetooth que es la librería nativa de Apple y en el caso de Android se usa BluetoothGatt que también es la librería nativa de Google.
 
- 
-
 [Apple Developer Documentation](https://developer.apple.com/documentation/corebluetooth)
 
-[](https://developer.android.com/reference/android/bluetooth/BluetoothGatt)
+[Android Developer Documentation](https://developer.android.com/reference/android/bluetooth/BluetoothGatt)
 
 Una vez se disponga de una libraría bluetooth, para poder mantener la conexión entre la App y el LSMaker es necesario es saber los UUID para el envío de información. 
 
